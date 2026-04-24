@@ -15,4 +15,5 @@ export default defineConfig({
       },
     },
   },
+  site: "https://master.d1ny1by3dhhyvt.amplifyapp.com",
 });
