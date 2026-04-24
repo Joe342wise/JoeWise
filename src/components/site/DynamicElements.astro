@@ -1,0 +1,65 @@
+---
+const inspirationalQuotes = [
+  "Innovation distinguishes between a leader and a follower.",
+  "The future belongs to those who believe in the beauty of their dreams.",
+  "Technology is a useful servant but a dangerous master.",
+  "Code is poetry written in logic.",
+  "Every expert was once a beginner.",
+  "Progress is impossible without change.",
+  "Dream big, start small, move fast.",
+  "Simplicity is the soul of efficiency.",
+  "The best way to predict the future is to invent it.",
+  "Learning to code is learning to think.",
+  "Focus on the fundamentals, the rest will follow.",
+  "Mistakes are proof that you are trying.",
+];
+
+const now = new Date();
+const currentTime = new Intl.DateTimeFormat("en-GB", {
+  timeZone: "Africa/Accra",
+  hour: "2-digit",
+  minute: "2-digit",
+  hour12: true,
+}).format(now);
+const currentHour = Number(
+  new Intl.DateTimeFormat("en-US", {
+    timeZone: "Africa/Accra",
+    hour: "numeric",
+    hour12: false,
+  }).format(now),
+);
+const currentStatus =
+  currentHour < 6
+    ? "Deep night"
+    : currentHour < 12
+      ? "Morning focus"
+      : currentHour < 17
+        ? "Afternoon flow"
+        : currentHour < 21
+          ? "Evening reset"
+          : "Late session";
+const currentQuote = inspirationalQuotes[now.getUTCDate() % inspirationalQuotes.length];
+---
+
+<div class="hidden lg:flex items-center justify-center gap-4 text-sm text-muted-foreground flex-1 min-w-0">
+  <div class="flex items-center gap-2 backdrop-blur-sm bg-background/40 px-3 py-2 rounded-md border border-border/30">
+    <span class="h-[0.15rem] w-[0.15rem] rounded-full bg-blue-700 ring-2 ring-blue-400 mr-[0.1rem] dark:bg-green-600 dark:ring-green-400"></span>
+    <svg viewBox="0 0 24 24" class="h-3 w-3" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+      <circle cx="12" cy="12" r="10"></circle>
+      <polyline points="12 6 12 12 16 14"></polyline>
+    </svg>
+    <span class="font-mono">{currentTime}</span>
+    <span class="text-xs opacity-70">Kumasi, GH</span>
+    <span class="ml-2 inline-flex items-center rounded-full border border-border/50 px-2 py-0.5 text-[11px] text-foreground/80">
+      Now: {currentStatus}
+    </span>
+  </div>
+  <div class="flex items-center gap-2 backdrop-blur-sm bg-background/40 px-3 py-2 rounded-md border border-border/30 min-w-0 max-w-sm">
+    <svg viewBox="0 0 24 24" class="h-3 w-3 shrink-0" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+      <path d="M3 21c3 0 7-1 9-5"></path>
+      <path d="M13 5a4 4 0 0 1 4 4c0 3-2 5-4 7"></path>
+      <path d="M7 5a4 4 0 0 1 4 4c0 3-2 5-4 7"></path>
+    </svg>
+    <span class="truncate text-sm">{currentQuote}</span>
+  </div>
+</div>

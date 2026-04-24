@@ -1,0 +1,36 @@
+---
+interface Props {
+  id: string;
+  title?: string;
+  description?: string;
+}
+
+const { id, title, description } = Astro.props;
+const labelledBy = title ? `${id}-title` : undefined;
+const hasHeaderContent = Boolean(title || description);
+---
+
+<section id={id} aria-labelledby={labelledBy} class="scroll-mt-24">
+  <div class="mx-auto max-w-5xl px-4 sm:px-6 py-14 md:py-14">
+    {hasHeaderContent && (
+      <header class="mb-12 text-center">
+        {title && (
+          <h2
+            id={labelledBy}
+            class="font-display text-3xl font-semibold tracking-tight md:text-4xl"
+          >
+            {title}
+          </h2>
+        )}
+        {description && (
+          <p class="mt-4 mx-auto max-w-2xl text-lg text-muted-foreground">
+            {description}
+          </p>
+        )}
+      </header>
+    )}
+    <div class="font-sans max-w-4xl mx-auto">
+      <slot />
+    </div>
+  </div>
+</section>

@@ -1,0 +1,162 @@
+[
+  {
+    "title": "Effort Has a Structure",
+    "date": "2026-03-26",
+    "excerpt": "Why Grit Isn't Enough",
+    "href": "https://bernardkirkadjanorkatamanso.substack.com/p/effort-has-a-structure",
+    "readTime": "2 min",
+    "image": "https://substack-post-media.s3.amazonaws.com/public/images/42f6f23d-8745-471d-9e73-7d8824a516d7_1536x1024.png"
+  },
+  {
+    "title": "Boring by Design",
+    "date": "2026-02-23",
+    "excerpt": "The Full-Stack TypeScript Stack I Actually Ship With",
+    "href": "https://bernardkirkadjanorkatamanso.substack.com/p/boring-by-design",
+    "readTime": "7 min",
+    "image": "https://substack-post-media.s3.amazonaws.com/public/images/7c9446c1-9389-4d8d-a783-bf7d90f4834f_1536x1024.png"
+  },
+  {
+    "title": "Another Year",
+    "date": "2026-02-22",
+    "excerpt": "Birthdays used to feel like arrival points.",
+    "href": "https://bernardkirkadjanorkatamanso.substack.com/p/another-year",
+    "readTime": "1 min",
+    "image": "https://substackcdn.com/image/fetch/$s_!Y4mS!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Fba5a17a6-466a-40f4-8ba7-16c9d887aaff_1536x1024.png"
+  },
+  {
+    "title": "Unsettled",
+    "date": "2026-02-21",
+    "excerpt": "I can&#8217;t say my life is fine.",
+    "href": "https://bernardkirkadjanorkatamanso.substack.com/p/unsettled",
+    "readTime": "1 min",
+    "image": "https://substackcdn.com/image/fetch/$s_!adEE!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Fefe3325f-40b7-4bda-977b-cde1bdef2e3a_1536x1024.png"
+  },
+  {
+    "title": "Bridging Runtime Uncertainty and Compile-Time Guarantees",
+    "date": "2026-02-08",
+    "excerpt": "An examination of how  runtime input is progressively constrained into compile-time guarantees using TypeScript&#8217;s type system",
+    "href": "https://bernardkirkadjanorkatamanso.substack.com/p/bridging-runtime-uncertainty-and",
+    "readTime": "6 min",
+    "image": "https://substack-post-media.s3.amazonaws.com/public/images/54998df0-ec0f-4883-a03d-8708cd38aa8f_1536x1024.png"
+  },
+  {
+    "title": "Tempering Ambition",
+    "date": "2026-02-07",
+    "excerpt": "Self-Awareness",
+    "href": "https://bernardkirkadjanorkatamanso.substack.com/p/tempering-ambition",
+    "readTime": "1 min",
+    "image": "https://substack-post-media.s3.amazonaws.com/public/images/c5d52047-6694-4aea-9290-99a120468464_1536x1024.png"
+  },
+  {
+    "title": "How programming language paradigms actually emerge",
+    "date": "2026-02-02",
+    "excerpt": "A short history of complexity, abstraction, and constraint",
+    "href": "https://bernardkirkadjanorkatamanso.substack.com/p/how-programming-language-paradigms",
+    "readTime": "5 min",
+    "image": "https://substack-post-media.s3.amazonaws.com/public/images/d8272c87-2f31-4a96-9dda-3dfc98cead8b_1536x1024.png"
+  },
+  {
+    "title": "Explicit Errors and Functional Cores",
+    "date": "2026-01-21",
+    "excerpt": "Building Predictable Systems in TypeScript",
+    "href": "https://bernardkirkadjanorkatamanso.substack.com/p/explicit-errors-and-functional-cores",
+    "readTime": "9 min",
+    "image": "https://substack-post-media.s3.amazonaws.com/public/images/fb1a5e81-ae32-4880-9f07-51d57202a6b4_1024x1024.png"
+  },
+  {
+    "title": "Scarcity in a World of Plenty",
+    "date": "2026-01-20",
+    "excerpt": "Every era believes it has arrived at the edge of a new world.",
+    "href": "https://bernardkirkadjanorkatamanso.substack.com/p/scarcity-in-a-world-of-plenty",
+    "readTime": "2 min",
+    "image": "https://substack-post-media.s3.amazonaws.com/public/images/84a0ea88-607f-4802-8160-0ccf13984e86_1536x1024.png"
+  },
+  {
+    "title": "Now I Know – Tech Terms",
+    "date": "2026-01-20",
+    "excerpt": "Welcome to the second post in &#8220;Now I know - Tech Terms!&#8221;",
+    "href": "https://bernardkirkadjanorkatamanso.substack.com/p/now-i-know-tech-terms-e29",
+    "readTime": "1 min",
+    "image": "https://substack-post-media.s3.amazonaws.com/public/images/9d52baaa-2e27-4fc0-a5f4-59e3025d6e0a_1024x1024.png"
+  },
+  {
+    "title": "AI Can Explain New Words",
+    "date": "2026-01-13",
+    "excerpt": "But Habits Make Them Stick",
+    "href": "https://bernardkirkadjanorkatamanso.substack.com/p/ai-can-explain-new-words",
+    "readTime": "1 min",
+    "image": "https://substack-post-media.s3.amazonaws.com/public/images/b053f16f-535d-4690-ae57-345ea7ce4a28_1024x1024.png"
+  },
+  {
+    "title": "Why AI Loves the Em Dash (—)",
+    "date": "2026-01-13",
+    "excerpt": "This is part of Cool Stuff I Noticed&#8212;a series where I share small observations about tools, learning, and systems that quietly make life easier.",
+    "href": "https://bernardkirkadjanorkatamanso.substack.com/p/why-ai-loves-the-em-dash",
+    "readTime": "1 min",
+    "image": "https://substack-post-media.s3.amazonaws.com/public/images/49b89415-a5a8-4343-9e69-83ab486dde6b_1024x1024.png"
+  },
+  {
+    "title": "Small Keyboard Tricks",
+    "date": "2026-01-13",
+    "excerpt": "This is part of Cool Stuff I Noticed&#8212;a series where I share small observations about tools, learning, and systems that quietly make life easier.",
+    "href": "https://bernardkirkadjanorkatamanso.substack.com/p/small-keyboard-tricks",
+    "readTime": "1 min",
+    "image": "https://substack-post-media.s3.amazonaws.com/public/images/ca9d5502-c7f0-465e-8cb8-a8585d33bbbb_1024x1024.png"
+  },
+  {
+    "title": "Now I Know – Tech Terms",
+    "date": "2026-01-13",
+    "excerpt": "Welcome to the first post in &#8220;Now I Know &#8211; Tech Terms!&#8221;",
+    "href": "https://bernardkirkadjanorkatamanso.substack.com/p/now-i-know-tech-terms",
+    "readTime": "2 min",
+    "image": "https://substack-post-media.s3.amazonaws.com/public/images/03429417-004b-49b6-bfae-b799138c7d29_1024x1024.png"
+  },
+  {
+    "title": "The Anatomy of a WordPress Plugin",
+    "date": "2026-01-11",
+    "excerpt": "WordPress plugins often feel more complex than they are.",
+    "href": "https://bernardkirkadjanorkatamanso.substack.com/p/the-anatomy-of-a-wordpress-plugin",
+    "readTime": "4 min",
+    "image": "https://substack-post-media.s3.amazonaws.com/public/images/204f4917-d479-4da7-9801-b229c8624f81_1536x1024.png"
+  },
+  {
+    "title": "The Silicon Ceiling",
+    "date": "2026-01-10",
+    "excerpt": "In 2026, most software is built by layering one person&#8217;s &#8220;magic&#8221; on top of another&#8217;s.",
+    "href": "https://bernardkirkadjanorkatamanso.substack.com/p/the-silicon-ceiling",
+    "readTime": "2 min",
+    "image": "https://substack-post-media.s3.amazonaws.com/public/images/6450a077-79bb-480d-b212-b36b286007aa_1024x1024.png"
+  },
+  {
+    "title": "Rediscovering Enterprise Architecture in TypeScript: A Meta-Framework Approach",
+    "date": "2026-01-09",
+    "excerpt": "I wanted to build a modern TypeScript backend with Node and Hono that felt as robust and predictable as the enterprise systems I had worked with &#8212; think Spring Boot, ASP.NET, classic OOP design ",
+    "href": "https://bernardkirkadjanorkatamanso.substack.com/p/rediscovering-enterprise-architecture",
+    "readTime": "1 min",
+    "image": "https://substack-post-media.s3.amazonaws.com/public/images/fdf7be08-7bed-4dca-8d16-e331927e8973_1024x1024.png"
+  },
+  {
+    "title": "Built at a Cost",
+    "date": "2026-01-08",
+    "excerpt": "Part I: Epigraph &#8212; Setting the Soul",
+    "href": "https://bernardkirkadjanorkatamanso.substack.com/p/built-at-a-cost",
+    "readTime": "1 min",
+    "image": "https://substack-post-media.s3.amazonaws.com/public/images/3aef361d-9ada-4541-8e22-bbe97fbf7097_1536x1024.png"
+  },
+  {
+    "title": "Code and Words",
+    "date": "2025-12-31",
+    "excerpt": "A 2025 retrospective",
+    "href": "https://bernardkirkadjanorkatamanso.substack.com/p/code-and-words",
+    "readTime": "4 min",
+    "image": "https://substack-post-media.s3.amazonaws.com/public/images/b5f5e5b4-b458-4630-9343-4983a5fec566_1024x1024.png"
+  },
+  {
+    "title": "Thinking Changes",
+    "date": "2025-12-31",
+    "excerpt": "A 2025 Chronicle",
+    "href": "https://bernardkirkadjanorkatamanso.substack.com/p/thinking-changes",
+    "readTime": "4 min",
+    "image": "https://substackcdn.com/image/fetch/$s_!1vao!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F83e42f0d-3f00-4628-861f-469da9607233_1344x660.png"
+  }
+]

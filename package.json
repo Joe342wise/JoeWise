@@ -1,0 +1,30 @@
+{
+  "name": "vite_react_shadcn_ts",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "astro dev",
+    "build": "astro build",
+    "lint": "eslint .",
+    "preview": "astro preview",
+    "refresh:substack": "node scripts/refresh-substack-cache.mjs",
+    "test": "node --test"
+  },
+  "dependencies": {
+    "@vercel/analytics": "^1.6.1",
+    "fast-xml-parser": "^4.4.1",
+    "clsx": "^2.1.1"
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.39.2",
+    "@tailwindcss/vite": "^4.1.18",
+    "@types/node": "^22.19.8",
+    "astro": "^4.16.19",
+    "eslint": "^9.39.2",
+    "globals": "^15.15.0",
+    "tailwindcss": "^4.1.18",
+    "typescript": "^5.9.3",
+    "typescript-eslint": "^8.54.0"
+  }
+}

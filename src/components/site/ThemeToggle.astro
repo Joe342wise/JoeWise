@@ -1,0 +1,94 @@
+<button
+  type="button"
+  data-theme-toggle
+  aria-label="Switch to dark mode"
+  title="Dark mode"
+  class="inline-flex h-10 w-10 items-center justify-center gap-2 whitespace-nowrap rounded-full text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 [&_svg]:pointer-events-none [&_svg]:size-4 [&_svg]:shrink-0 hover:bg-accent hover:text-accent-foreground"
+>
+  <svg
+    data-theme-icon="moon"
+    viewBox="0 0 24 24"
+    fill="none"
+    stroke="currentColor"
+    stroke-width="2"
+    stroke-linecap="round"
+    stroke-linejoin="round"
+    aria-hidden="true"
+  >
+    <path d="M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9Z"></path>
+  </svg>
+  <svg
+    data-theme-icon="sun"
+    viewBox="0 0 24 24"
+    fill="none"
+    stroke="currentColor"
+    stroke-width="2"
+    stroke-linecap="round"
+    stroke-linejoin="round"
+    aria-hidden="true"
+    class="hidden"
+  >
+    <circle cx="12" cy="12" r="4"></circle>
+    <path d="M12 2v2"></path>
+    <path d="M12 20v2"></path>
+    <path d="m4.93 4.93 1.41 1.41"></path>
+    <path d="m17.66 17.66 1.41 1.41"></path>
+    <path d="M2 12h2"></path>
+    <path d="M20 12h2"></path>
+    <path d="m6.34 17.66-1.41 1.41"></path>
+    <path d="m19.07 4.93-1.41 1.41"></path>
+  </svg>
+</button>
+
+<script is:inline>
+  (() => {
+    const storageKey = "theme";
+
+    const applyTheme = (theme, button) => {
+      const isDark = theme === "dark";
+      document.documentElement.classList.toggle("dark", isDark);
+      document.documentElement.style.colorScheme = theme;
+      button?.setAttribute(
+        "aria-label",
+        isDark ? "Switch to light mode" : "Switch to dark mode",
+      );
+      button?.setAttribute("title", isDark ? "Light mode" : "Dark mode");
+      button
+        ?.querySelector('[data-theme-icon="moon"]')
+        ?.classList.toggle("hidden", isDark);
+      button
+        ?.querySelector('[data-theme-icon="sun"]')
+        ?.classList.toggle("hidden", !isDark);
+    };
+
+    const initThemeToggle = () => {
+      const button = document.querySelector("[data-theme-toggle]");
+      if (!(button instanceof HTMLButtonElement) || button.dataset.bound === "true") {
+        return;
+      }
+
+      button.dataset.bound = "true";
+
+      const storedTheme = localStorage.getItem(storageKey);
+      const initialTheme =
+        storedTheme ??
+        (document.documentElement.classList.contains("dark") ? "dark" : "light");
+
+      applyTheme(initialTheme, button);
+
+      button.addEventListener("click", () => {
+        const nextTheme = document.documentElement.classList.contains("dark")
+          ? "light"
+          : "dark";
+        localStorage.setItem(storageKey, nextTheme);
+        applyTheme(nextTheme, button);
+      });
+    };
+
+    if (document.readyState === "loading") {
+      document.addEventListener("DOMContentLoaded", initThemeToggle, { once: true });
+    } else {
+      initThemeToggle();
+    }
+  })();
+</script>

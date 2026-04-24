@@ -1,0 +1,141 @@
+---
+import BaseLayout from "@/layouts/BaseLayout.astro";
+import Section from "@/components/site/Section.astro";
+import Footer from "@/components/site/Footer.astro";
+import Experience from "@/components/site/Experience.astro";
+import BackgroundFX from "@/components/site/BackgroundFX.astro";
+import Navbar from "@/components/site/Navbar.astro";
+import ProjectList from "@/components/site/ProjectList.astro";
+
+const highlights = [
+  "Software Engineer",
+  "Backend Systems",
+  "Node.js & TypeScript",
+  "ASP.NET Core",
+  "Security Mindset",
+  "Mentorship",
+];
+
+const skillGroups = [
+  {
+    title: "Backend Development",
+    items: ["Node.js", "Express", "ASP.NET Core", "Django", "Hono"],
+  },
+  {
+    title: "Databases",
+    items: ["PostgreSQL", "MongoDB", "MySQL", "SQLite"],
+  },
+  {
+    title: "Programming",
+    items: ["JavaScript", "TypeScript", "Python", "C#"],
+  },
+  {
+    title: "Practices",
+    items: [
+      "REST APIs",
+      "JWT Authentication",
+      "RBAC",
+      "Clean Architecture",
+      "Git",
+      "Docker",
+    ],
+  },
+];
+
+---
+
+<BaseLayout
+  title="Joseph Nyarko"
+  description="Software engineer building reliable backend systems, secure authentication flows, and practical developer tools."
+  image="/joseph-portrait.png"
+>
+  <div class="min-h-screen bg-background text-foreground font-sans" id="home">
+    <Navbar />
+    <BackgroundFX />
+    <main
+      id="main-content"
+      class="max-w-6xl mx-auto px-4 sm:px-6 py-6 mt-4 font-sans"
+    >
+      <Section id="about">
+        <div class="flex flex-col md:flex-row gap-8 md:gap-12">
+          <div class="flex-1 flex flex-col space-y-6 mt-4">
+            <p class="max-w-2xl text-2xl text-muted-foreground">
+              Software Engineer 🇬🇭
+            </p>
+            <div class="space-y-4 mt-3 leading-relaxed">
+              <p>
+                I build backend systems and tools that prioritize reliability,
+                security, and practical delivery. My work is centered around
+                Python, Django, Node.js, TypeScript, PostgreSQL, MongoDB,
+                Hono, and ASP.NET Core.
+              </p>
+              <p>
+                I care about clean system design, performance optimization, and
+                building software that holds up in real use. Alongside
+                engineering, I have taught backend development and taken on
+                leadership roles that strengthened how I collaborate and guide
+                teams.
+              </p>
+            </div>
+
+            <aside class="space-y-3 mt-8">
+              <h3 class="font-medium">Highlights</h3>
+              <div class="flex flex-wrap gap-2">
+                {
+                  highlights.map((fact) => (
+                    <span class="inline-flex items-center rounded-full border px-2.5 py-2 text-xs font-semibold transition-colors focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 text-foreground border-border bg-background hover:bg-accent hover:text-accent-foreground">
+                      {fact}
+                    </span>
+                  ))
+                }
+              </div>
+            </aside>
+          </div>
+
+          <aside class="shrink-0 w-full md:w-80">
+            <div class="overflow-hidden rounded-lg border border-border/70 bg-background/80 shadow-[0_12px_40px_-24px_rgba(0,0,0,0.25)]">
+              <img
+                src="/joseph-portrait.png"
+                width="1086"
+                height="1448"
+                alt="Joseph Nyarko portrait"
+                loading="eager"
+                decoding="async"
+                class="h-auto w-full object-cover"
+              />
+            </div>
+          </aside>
+        </div>
+      </Section>
+
+      <Section id="projects">
+        <ProjectList />
+      </Section>
+
+      <Section id="skills">
+        <div class="flex items-baseline justify-between mb-6">
+          <h2 class="text-2xl font-medium tracking-tight">Skills</h2>
+        </div>
+        <div class="grid gap-4 md:grid-cols-2">
+          {skillGroups.map((group) => (
+            <article class="rounded-md border border-border/60 bg-background/80 p-5">
+              <h3 class="text-base font-semibold tracking-tight">
+                {group.title}
+              </h3>
+              <div class="mt-4 flex flex-wrap gap-2">
+                {group.items.map((item) => (
+                  <span class="inline-flex items-center rounded-full border px-2.5 py-1 text-xs font-medium text-foreground border-border bg-background hover:bg-accent hover:text-accent-foreground transition-colors">
+                    {item}
+                  </span>
+                ))}
+              </div>
+            </article>
+          ))}
+        </div>
+      </Section>
+
+      <Experience />
+    </main>
+    <Footer />
+  </div>
+</BaseLayout>

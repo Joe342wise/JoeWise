@@ -1,0 +1,46 @@
+---
+interface Role {
+  title: string;
+  org: string;
+  period: string;
+  current?: boolean;
+}
+
+const roles: Role[] = [
+  {
+    title: "Backend Development Instructor",
+    org: "Ideation Axis",
+    period: "Sep 2024–Nov 2024",
+  },
+  {
+    title: "Class Representative",
+    org: "UMaT Computer Science and Engineering Department",
+    period: "2023–Present",
+    current: true,
+  },
+];
+---
+
+<section id="experience" class="mx-auto max-w-5xl px-12 py-16 md:py-10 scroll-mt-24">
+  <h2 class="text-2xl font-medium tracking-tight mb-8">Experience</h2>
+
+  <div class="space-y-4">
+    {roles.map((role) => (
+      <div
+        class="flex flex-col sm:flex-row sm:items-baseline gap-1 sm:gap-4 py-2 border-b border-border last:border-b-0"
+      >
+        <span class="text-xs text-muted-foreground tabular-nums shrink-0 w-24">
+          {role.period}
+        </span>
+        <div class="flex-1 min-w-0">
+          <span class="font-medium">{role.title}</span>
+          <span class="text-muted-foreground"> at </span>
+          <span class="text-muted-foreground">{role.org}</span>
+          {role.current && (
+            <span class="ml-2 text-xs text-primary">current</span>
+          )}
+        </div>
+      </div>
+    ))}
+  </div>
+</section>
