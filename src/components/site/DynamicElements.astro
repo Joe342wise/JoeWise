@@ -48,9 +48,12 @@ const currentQuote = inspirationalQuotes[now.getUTCDate() % inspirationalQuotes.
       <circle cx="12" cy="12" r="10"></circle>
       <polyline points="12 6 12 12 16 14"></polyline>
     </svg>
-    <span class="font-mono">{currentTime}</span>
+    <span class="font-mono" data-accra-time>{currentTime}</span>
     <span class="text-xs opacity-70">Kumasi, GH</span>
-    <span class="ml-2 inline-flex items-center rounded-full border border-border/50 px-2 py-0.5 text-[11px] text-foreground/80">
+    <span
+      class="ml-2 inline-flex items-center rounded-full border border-border/50 px-2 py-0.5 text-[11px] text-foreground/80"
+      data-accra-status
+    >
       Now: {currentStatus}
     </span>
   </div>
@@ -63,3 +66,44 @@ const currentQuote = inspirationalQuotes[now.getUTCDate() % inspirationalQuotes.
     <span class="truncate text-sm">{currentQuote}</span>
   </div>
 </div>
+
+<script is:inline>
+  (() => {
+    const timeEl = document.querySelector("[data-accra-time]");
+    const statusEl = document.querySelector("[data-accra-status]");
+
+    if (!(timeEl instanceof HTMLElement) || !(statusEl instanceof HTMLElement)) {
+      return;
+    }
+
+    const getStatus = (hour) => {
+      if (hour < 6) return "Deep night";
+      if (hour < 12) return "Morning focus";
+      if (hour < 17) return "Afternoon flow";
+      if (hour < 21) return "Evening reset";
+      return "Late session";
+    };
+
+    const timeFormatter = new Intl.DateTimeFormat("en-GB", {
+      timeZone: "Africa/Accra",
+      hour: "2-digit",
+      minute: "2-digit",
+      hour12: true,
+    });
+
+    const hourFormatter = new Intl.DateTimeFormat("en-US", {
+      timeZone: "Africa/Accra",
+      hour: "numeric",
+      hour12: false,
+    });
+
+    const updateClock = () => {
+      const now = new Date();
+      timeEl.textContent = timeFormatter.format(now);
+      statusEl.textContent = `Now: ${getStatus(Number(hourFormatter.format(now)))}`;
+    };
+
+    updateClock();
+    window.setInterval(updateClock, 1000);
+  })();
+</script>
