@@ -13,4 +13,4 @@ Allow: /
 User-agent: *
 Allow: /
 
-Sitemap: https://master.d1ny1by3dhhyvt.amplifyapp.com/sitemap.xml
+Sitemap: https://www.osei.app/sitemap.xml
