@@ -46,6 +46,42 @@ const projectsData: ProjectData[] = [
     github: "https://github.com/Joe342wise/ASP.NET_Core.git",
     status: "completed",
   },
+  {
+    id: "serpside",
+    title: "SerpSide",
+    shortDescription:
+      "Restaurant search and product price comparison with SerpApi — built for the PyCon US raffle.",
+    fullDescription:
+      "A two-mode conference companion built with SerpApi. Food Explorer searches restaurants near any venue using SerpApi Google Maps. Swag or Pass searches any product and returns prices sorted by best deal — swipe to smash (save) or pass. Built for the SerpApi PyCon US Raffle.",
+    techs: ["Python", "FastAPI", "Nuxt 3", "Vue 3", "DaisyUI", "Tailwind CSS", "Docker"],
+    github: "https://github.com/Joe342wise/serpside.git",
+    live: "https://serpside.osei.app/",
+    status: "completed",
+  },
+  {
+    id: "serp-tracker",
+    title: "SERP Tracker",
+    shortDescription:
+      "Track Google rankings, AI Overviews, SERP volatility and keyword cannibalization from a dashboard or CLI.",
+    fullDescription:
+      "A SERP monitoring tool that tracks Google search rankings over time, detects AI Overview presence, measures SERP volatility with statistical analysis, and uncovers keyword cannibalization. Features a web dashboard with Chart.js visualizations, APScheduler automation, and a standalone CLI for offline analysis.",
+    techs: ["FastAPI", "Python", "APScheduler", "Chart.js", "SQLite", "Jinja2", "Tailwind CSS", "Docker"],
+    github: "https://github.com/Joe342wise/serp-project.git",
+    live: "https://seobyserp.osei.app/",
+    status: "completed",
+  },
+  {
+    id: "serpchat",
+    title: "SerpApi MCP Chat",
+    shortDescription:
+      "Web search chat interface powered by SerpApi and the Model Context Protocol.",
+    fullDescription:
+      "A chat interface that sends queries to a FastMCP server which calls SerpApi and returns organic search results. Built with Astro 5 SSR and Tailwind CSS v4 on the frontend, and a Python FastMCP backend using the SerpApi SDK. Uses the MCP streamable HTTP transport for real-time search.",
+    techs: ["Astro", "Tailwind CSS", "Python", "FastMCP", "SerpApi"],
+    github: "https://github.com/Joe342wise/MCPChatBot.git",
+    live: "https://serpchat.osei.app/",
+    status: "completed",
+  },
 ];
 
 const inProgressCount = projectsData.filter(
